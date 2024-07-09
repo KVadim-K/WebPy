@@ -1,0 +1,7 @@
+h1:after{
+    content: 'Город ';
+    color: deeppink;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: bisque;
+}
