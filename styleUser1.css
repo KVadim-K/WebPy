@@ -1,26 +1,50 @@
+/* Основные стили для карточки */
 .card{
    width: 400px;
-   height: 650px;
-   background-color: burlywood;
-   border-radius: 60px;
+   height: 600px;
+   background-color: OldLace;
+   border-radius: 60px; /* Добавляет скругленные углы */
+   transition: transform 0.3s, box-shadow 0.3s; /* Добавляет тень для эффекта объемности */
+   margin-bottom: 20px; /* Добавляет отступ снизу для каждой карточки */
+   padding: 10px;       /* Добавляет внутренние отступы */
+   border: 1px solid #ccc; /* Добавляет рамку для наглядности */
 }
-
+/* Стили для фотографии */
 .photo {
    height: 40%;
    padding: 40px;
 
 }
 
+/* Стили для информации */
 .info {
    height: 40%;
    padding: 40px;
 
 }
 
+/* Стили для фотографии */
 img {
    position: relative;
-   left:12%;
+   left:11%;
    border-radius: 20px;
+}
+
+
+
+/* Стили при наведении на карточку */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Дополнительные стили при наведении */
+.card:hover .photo img {
+    border: 2px solid Blue;
+}
+.card:hover .info h3 {
+    color: Blue;
 }
 
 /* Стили для первого h3 */
